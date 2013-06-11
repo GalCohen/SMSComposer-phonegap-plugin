@@ -29,7 +29,7 @@ SMSComposer.m LINE 56: [[UIApplication sharedApplication] setStatusBarHidden:YES
 ` <feature name="SMSComposer">
         <param name="ios-package" value="SMSComposer" />
     </feature>`
-- On android, in the value attribute be sure to include the package name as well, for example `value="org.apache.cordova"`
+- On android, in the value attribute be sure to include the package name as well, for example `value="org.apache.cordova.SMSComposer"`
 
 ## RELEASE NOTES ##
 
