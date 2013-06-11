@@ -25,7 +25,11 @@ SMSComposer.m LINE 56: [[UIApplication sharedApplication] setStatusBarHidden:YES
 1. Add the SMSComposer.h and SMSComposer.m files to your "Plugins" folder in your PhoneGap project
 2. Add the SMSComposer.js files to your "www" folder on disk, and add a reference to the .js file after phonegap.js.
 3. Add the MessageUI framework to your Xcode project. In Xcode 4, double-click on the target, select "Build Phases" -> "Link Binary with Libraries" -> "+" and select "MessageUI.framework".
-4. Add to confix.xml under plugins:` <plugin name="SMSComposer" value="SMSComposer" />`
+4. Add to config.xml under plugins:` <plugin name="SMSComposer" value="SMSComposer" />` or, if using the new format, 
+` <feature name="SMSComposer">
+        <param name="ios-package" value="SMSComposer" />
+    </feature>`
+- On android, in the value attribute be sure to include the package name as well, for example `value="org.apache.cordova"`
 
 ## RELEASE NOTES ##
 
